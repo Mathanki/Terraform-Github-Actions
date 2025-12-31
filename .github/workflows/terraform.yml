@@ -7,7 +7,7 @@ on:
       - test
       - dev
     paths:
-      - "code"
+      - "code/**"
 
   pull_request:
     branches:
@@ -15,7 +15,7 @@ on:
       - test
       - dev
     paths:
-      - "code"
+      - "code/**"
 
 env:
   TF_LOG: INFO
@@ -37,7 +37,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: "code"
+        working-directory: "code/**"
 
     steps:
       - name: Checkout
@@ -167,7 +167,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: "code"
+        working-directory: "code/**"
 
     steps:
       - name: Checkout
