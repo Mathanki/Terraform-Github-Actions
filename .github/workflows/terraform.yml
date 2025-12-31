@@ -37,7 +37,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: "code/**"
+        working-directory: "code"
 
     steps:
       - name: Checkout
@@ -167,7 +167,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: "code/**"
+        working-directory: "code"
 
     steps:
       - name: Checkout
